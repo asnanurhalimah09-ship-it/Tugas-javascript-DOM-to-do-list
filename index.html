@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List — Tugas Mandiri JavaScript DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <header class="main-header">
+            <h1 id="judul-utama">To-Do List</h1>
+            <p id="sub-judul">Ayo masukan tugas barumu, selesaikan satu per satu</p>
+        </header>
+
+        <main class="card" id="card-todo">
+            <div class="input-wrapper">
+                <input type="text" id="input-tugas" placeholder="Ketik tugas baru di sini..." autocomplete="off">
+                <button id="btn-tambah" class="btn btn-tambah">+ Tambah</button>
+            </div>
+
+            <ul id="daftar-tugas" class="task-list"></ul>
+            <p id="pesan-kosong" class="empty-state">Belum ada tugas. Yuk tambahkan tugas pertamamu!</p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span id="jumlah-total" class="stat-angka">0</span>
+                    <span class="stat-label">Total Tugas</span>
+                </div>
+                <div class="stat-item">
+                    <span id="jumlah-selesai" class="stat-angka">0</span>
+                    <span class="stat-label">Selesai</span>
+                </div>
+                <div class="stat-item">
+                    <span id="jumlah-belum" class="stat-angka">0</span>
+                    <span class="stat-label">Belum Selesai</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 To-Do List Tugas Asna Nur Halimah.</p>
+        </footer>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
