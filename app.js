@@ -1,7 +1,4 @@
-console.log("Bismillah Ya Allah");
-
 // Aktivitas 1 DOM SELECTION / SELEKSI ELEMENT
-// Kenapa kita harus seleksi? Karena kita "menangkap" atau ambil id/class
 // Mengambil element HTML tersebut lalu disimpan di variabel JS
 
 // 1. Mengambil element input dan tombol tambah
@@ -17,10 +14,12 @@ const jumlahTotal = document.getElementById("jumlah-total");
 const jumlahSelesai = document.getElementById("jumlah-selesai");
 const jumlahBelum = document.getElementById("jumlah-belum");
 
+
 // Aktivitas 2 : Variabel penampung angka statistik
 // *let* digunakan untuk nilai variabel yang akan berubah-ubah (counting)
 let totalTugas = 0;
 let totalSelesai = 0;
+
 
 // Aktivitas 3 : Fungsi update angka statistik & pesan status
 function perbaruiStatistik() {
@@ -41,6 +40,7 @@ function perbaruiStatistik() {
         pesanKosong.classList.add("hidden");
     }
 }
+
 
 // Aktivitas 4 : Fungsi utama logika tambah tugas baru
 function tambahTugas() {
